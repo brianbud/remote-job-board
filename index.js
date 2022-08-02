@@ -7,6 +7,9 @@ xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     // Typical action to be performed when the document is ready:
     const data = JSON.parse(xhttp.responseText);
+    data.forEach(function (row, index) {
+      console.log(row, index);
+    });
   }
 };
 xhttp.open('GET', 'https://remoteok.com/api?tag=css', true);

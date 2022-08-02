@@ -30,4 +30,16 @@ Instead of data will be displayed on the body/innerHTML, I use the JSON.parse() 
 
 `const data = JSON.parse(xhttp.responseText)`
 
-### loop through each array
+### Loop through each array
+
+To loop over each row/array, I used the forEach() method.
+
+` data.forEach(function (row, index) { console.log(row, index); });`
+
+**obstacle:** I don't want the first row to render.
+
+![loop rows of data](screenshots/forEach-data.png)
+
+**solution:**
+
+###
