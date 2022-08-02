@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     // Typical action to be performed when the document is ready:
     const data = JSON.parse(xhttp.responseText);
-    data.forEach(function (row, index) {
+    data.slice(1).forEach(function (row, index) {
       console.log(row, index);
     });
   }

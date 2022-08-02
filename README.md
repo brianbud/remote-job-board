@@ -36,10 +36,15 @@ To loop over each row/array, I used the forEach() method.
 
 ` data.forEach(function (row, index) { console.log(row, index); });`
 
-**obstacle:** I don't want the first row to render.
+**Obstacle:** I don't want the first row to render.
 
 ![loop rows of data](screenshots/forEach-data.png)
 
 **solution:**
+Using the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) method.
 
-###
+`data.slice(1).forEach(function (row, index) { console.log(row, index); });`
+
+The slice() method returns a copy of a portion of an array. Since `end` is not included, slice(1) cuts the `index 0` row and starts from index 1 to end.
+
+![Index 0 of array removed from data rows](screenshots/data-slice.png)
