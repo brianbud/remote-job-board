@@ -72,3 +72,5 @@ To display the data on the page I used the `appendChild` method.
 
 eg:
 ![Left side row data](screenshots/row-info-left.png)
+
+### Basic CSS Styling

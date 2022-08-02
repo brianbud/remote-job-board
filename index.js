@@ -10,10 +10,11 @@ xhttp.onreadystatechange = function () {
     const container = document.getElementById('container');
     data.slice(1).forEach(function (row, index) {
       const rowDiv = document.createElement('div');
+      rowDiv.classList.add('row');
       rowDiv.innerHTML = `
-      <h5>${row.company}</h5>
-      <h3>${row.position}</h3>
-      <p>${row.location}</p>
+      <h5 class='company'>${row.company}</h5>
+      <h3 class= 'position'>${row.position}</h3>
+      <p class= 'location'>${row.location}</p>
       `;
       container.appendChild(rowDiv);
     });
