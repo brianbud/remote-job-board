@@ -63,3 +63,12 @@ rowDiv.innerHTML = `
 ```
 
 **Why use `innerHTML` instead of `.textContent`?**
+
+I set the innerHTML to have More HTML elements by creating it as a string of HTML elements instead of using multiple `createElement` method for each element.
+
+To display the data on the page I used the `appendChild` method.
+
+`const container = document.getElementById('container');` does a query selector for the body container and ` container.appendChild(rowDiv);` appends the data to the webpage with the rows with the info for Company name, job title and location.
+
+eg:
+![Left side row data](screenshots/row-info-left.png)
