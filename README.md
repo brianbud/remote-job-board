@@ -48,3 +48,18 @@ Using the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 The slice() method returns a copy of a portion of an array. Since `end` is not included, slice(1) cuts the `index 0` row and starts from index 1 to end.
 
 ![Index 0 of array removed from data rows](screenshots/data-slice.png)
+
+### Create Div element to display main data
+
+`const rowDiv = document.createElement('div');` creates div
+and I fill the div with the object property for informations needed:
+
+```javascript
+rowDiv.innerHTML = `
+      <h5>${row.company}</h5>
+      <h3>${row.position}</h3>
+      <p>${row.location}</p>
+      `;
+```
+
+**Why use `innerHTML` instead of `.textContent`?**

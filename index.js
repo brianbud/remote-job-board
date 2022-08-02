@@ -8,7 +8,12 @@ xhttp.onreadystatechange = function () {
     // Typical action to be performed when the document is ready:
     const data = JSON.parse(xhttp.responseText);
     data.slice(1).forEach(function (row, index) {
-      console.log(row, index);
+      const rowDiv = document.createElement('div');
+      rowDiv.innerHTML = `
+      <h5>${row.company}</h5>
+      <h3>${row.position}</h3>
+      <p>${row.location}</p>
+      `;
     });
   }
 };
