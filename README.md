@@ -24,4 +24,10 @@ I understand that Fetch is better to use but I wanted to practice using XMLHttpR
 
 Later on, I will replace it with Fetch for understanding modern practice.
 
-All data will be displayed on the body/innerHTML.
+### Turning data to objects
+
+Instead of data will be displayed on the body/innerHTML, I use the JSON.parse() method to turn all the data/string response to a JS object and assign it to a variable called data.
+
+`const data = JSON.parse(xhttp.responseText)`
+
+### loop through each array
