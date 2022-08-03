@@ -78,3 +78,17 @@ eg:
 This website layout uses Flexbox.
 
 I created new divs for left and mid section and using `display: flex`, it will by default be in a row in which I can now add tags for the mid-section.
+
+### Using `map()` and `join()` method to display tags
+
+For the mid-section, I used `.map()` method to add every element in a `<span>`
+
+The result returns all the elements with a commas that separate them.
+
+![tags separated by commas](screenshots/tags.png)
+
+to get rid of the commas I used the `.join('')`.
+
+![tag section after removing commas](screenshots/tags-no-commas.png)
+
+ps. for now, ignore all the `border: 2px solid red;`, those are for visual guides.

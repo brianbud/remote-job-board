@@ -18,7 +18,13 @@ xhttp.onreadystatechange = function () {
       <h3 class= 'position'>${row.position}</h3>
       <p class= 'location'>${row.location}</p>
       </div>
-      <div class='mid-section></div>
+      <div class='mid-section'>
+      ${row.tags
+        .map(function (tag) {
+          return `<span class= 'tag'>${tag}</span>`;
+        })
+        .join('')}
+      </div>
       `;
       container.appendChild(rowDiv);
     });

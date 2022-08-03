@@ -20,3 +20,8 @@
     border: 1px solid gray;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.tag {
+    margin: 5px; 
+    border: 2px solid red;
+}
