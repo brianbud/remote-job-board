@@ -8,13 +8,17 @@ xhttp.onreadystatechange = function () {
     // Typical action to be performed when the document is ready:
     const data = JSON.parse(xhttp.responseText);
     const container = document.getElementById('container');
+    console.log(data);
     data.slice(1).forEach(function (row, index) {
       const rowDiv = document.createElement('div');
       rowDiv.classList.add('row');
       rowDiv.innerHTML = `
+      <div class='left-section'>
       <h5 class='company'>${row.company}</h5>
       <h3 class= 'position'>${row.position}</h3>
       <p class= 'location'>${row.location}</p>
+      </div>
+      <div class='mid-section></div>
       `;
       container.appendChild(rowDiv);
     });

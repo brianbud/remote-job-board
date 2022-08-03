@@ -74,3 +74,7 @@ eg:
 ![Left side row data](screenshots/row-info-left.png)
 
 ### Basic CSS Styling
+
+This website layout uses Flexbox.
+
+I created new divs for left and mid section and using `display: flex`, it will by default be in a row in which I can now add tags for the mid-section.
