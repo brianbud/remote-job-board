@@ -21,10 +21,11 @@ xhttp.onreadystatechange = function () {
       <div class='mid-section'>
       ${row.tags
         .map(function (tag) {
-          return `<span class= 'tag'>${tag}</span>`;
+          return `<div class= 'tag'>${tag}</div>`;
         })
         .join('')}
       </div>
+      <div class='right-section'></div>
       `;
       container.appendChild(rowDiv);
     });

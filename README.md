@@ -92,3 +92,11 @@ to get rid of the commas I used the `.join('')`.
 ![tag section after removing commas](screenshots/tags-no-commas.png)
 
 ps. for now, ignore all the `border: 2px solid red;`, those are for visual guides.
+
+**Obstacle:** tags outside the container
+
+![tags outside the container](screenshots/tags-overflow.png)
+
+I placed the tags in a `<span>` so I believe this issue occured because it's in-line elements. I replaced it with `<div>` which are block elements to avoid overflowing from the container.
+
+since `div` is a block element and stacks on each other, to make it look like the final product, I used `display: flex` , `flex-wrap:wrap` and `align-items: center`.
