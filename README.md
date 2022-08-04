@@ -107,6 +107,18 @@ since `div` is a block element and stacks on each other, to make it look like th
 
 The buttons opens up a new tab to the actual job posting in Remote OK's website thanks to adding the object property of the url from the API.
 
-Regarding styling, I started making a habit to always use `cursor: pointer` and change in opacity for give the user a feedback in `:hover` state.
+Regarding styling, I started making a habit to always use `cursor: pointer` and change in opacity for give the user a feedback in `:hover` state and make it look more clickable.
 
 The background-color is the same as in the original website which I got by inspecting it.
+
+### Making Date posted more readable
+
+In the API, the job date posted is in a confusing format that looks like this: _"2022-08-02T23:52:31+00:00"_
+
+Javascript has a built-in class called `new Date()` which converts this `new Date("2022-08-02T23:52:31+00:00" )` into a date object that looks like this: _Tue Aug 02 2022 19:52:31 GMT-0400 (Eastern Daylight Time)_
+
+![date format](screenshots/newDate.png)
+
+However this format still looked complicated and I used `toLocaleString()` method that made it more readable.
+
+![date format simplified](screenshots/toLocaleString.png)
