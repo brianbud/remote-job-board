@@ -20,6 +20,24 @@
 
 .right-section {
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply {
+    color: white;
+    background-color: rgb(255, 71, 66);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.apply:hover {
+    cursor: pointer;
+    opacity: .75;
 }
 
 .company {

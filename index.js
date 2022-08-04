@@ -25,7 +25,9 @@ xhttp.onreadystatechange = function () {
         })
         .join('')}
       </div>
-      <div class='right-section'></div>
+      <div class='right-section'>
+      <a href='${row.url}' target = '_blank'>
+      <button class='apply'>Apply</button></a></div>
       `;
       container.appendChild(rowDiv);
     });

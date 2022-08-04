@@ -100,3 +100,13 @@ ps. for now, ignore all the `border: 2px solid red;`, those are for visual guide
 I placed the tags in a `<span>` so I believe this issue occured because it's in-line elements. I replaced it with `<div>` which are block elements to avoid overflowing from the container.
 
 since `div` is a block element and stacks on each other, to make it look like the final product, I used `display: flex` , `flex-wrap:wrap` and `align-items: center`.
+
+### Button section
+
+![job row posting with buttons](screenshots/button-section.png)
+
+The buttons opens up a new tab to the actual job posting in Remote OK's website thanks to adding the object property of the url from the API.
+
+Regarding styling, I started making a habit to always use `cursor: pointer` and change in opacity for give the user a feedback in `:hover` state.
+
+The background-color is the same as in the original website which I got by inspecting it.
