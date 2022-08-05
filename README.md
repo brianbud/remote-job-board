@@ -1,12 +1,16 @@
 # remote-job-board
 
-A developer that I have been following a long time and admire is Indie Solopreneur [Pieter Levels](https://twitter.com/levelsio) who is the creator of [NomadList](https://nomadlist.com/) and [Remote Ok](https://remoteok.com/).
-
 In this project, I am recreating a simple remote job board using Remote Ok's [API](https://remoteok.com/api)
+
+A developer that I have been following a long time and admire is Indie Solopreneur [Pieter Levels](https://twitter.com/levelsio) who is the creator of [NomadList](https://nomadlist.com/) and [Remote Ok](https://remoteok.com/).
 
 Since I have been applying for a Software Developer job, looking at job boards peaked my interest to recreate and understand how it works.
 
 I am also doing this project to solidify and bringing my learning with HTML, CSS and Vanilla JavaScript all together.
+
+**Link to project** https://brianbud.github.io/remote-job-board/
+
+![remote job board homepage](screenshots/remote-job-board-homepage.png)
 
 ## How It's Made:
 
@@ -122,3 +126,15 @@ Javascript has a built-in class called `new Date()` which converts this `new Dat
 However this format still looked complicated and I used `toLocaleString()` method that made it more readable.
 
 ![date format simplified](screenshots/toLocaleString.png)
+
+## Lessons Learned:
+
+- `JSON.parse()` and `JSON.stringify()`
+- working with XMLHttpRequest instead of Fetch
+- Looping with `forEach()`
+- using JS `new Date()` and `.toLocaleString()` for time
+- overall I learned to Google better and be patient to find the right solution.
+
+For the future, I would like to add more features and build more upon this especially to make it look better.
+
+Thank you for reading this.
