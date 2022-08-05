@@ -3,7 +3,12 @@ h5{
     font-weight: 500;
 }
 
+body {
+    background-color: rgb(179, 186, 222);
+}
+
 .row {
+    background-color: white;
     border: 2px solid rgb(111, 141, 226);
     margin: 10px 0;
     padding: 0 5px;
